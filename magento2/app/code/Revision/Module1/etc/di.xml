@@ -1,0 +1,20 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="revision_module1_post_listing_data_source" xsi:type="string">Revision\Module1\Model\ResourceModel\Post\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="Revision\Module1\Model\ResourceModel\Post\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">revision_module1_post</argument>
+            <argument name="resourceModel" xsi:type="string">Revision\Module1\Model\ResourceModel\Post</argument>
+        </arguments>
+    </virtualType>
+    <type name="Revision\Module1\Block\Display"> <!-- change name here to match your block class name -->
+    <arguments>
+        <argument name="templateProcessor" xsi:type="object">Magento\Widget\Model\Template\Filter</argument>
+    </arguments>
+</type>
+</config>

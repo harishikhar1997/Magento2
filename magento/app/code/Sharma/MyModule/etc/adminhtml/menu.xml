@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+
+    	<add id="Sharma_MyModule::mysettings" title="My Settings" module="Sharma_MyModule" sortOrder="51" resource="Sharma_MyModule::mysettings"/>
+
+		<add id="Sharma_MyModule::post" title="Manage Posts" module="Sharma_MyModule" sortOrder="10" resource="Sharma_MyModule::post" parent="Sharma_MyModule::mysettings" action="sharma_mymodule/post/index"/>    	
+
+		<add id="Sharma_MyModule::configuration" title="Configuration" module="Sharma_MyModule" sortOrder="99" resource="Sharma_MyModule::configuration" parent="Sharma_MyModule::mysettings" action="adminhtml/system_config/edit/section/mymodule"/>
+
+    </menu>
+</config>

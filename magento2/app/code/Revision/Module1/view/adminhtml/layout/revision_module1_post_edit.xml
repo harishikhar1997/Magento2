@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="../../../../../../
+../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="left">
+            <block class="Revision\Module1\Block\Adminhtml\Display\Edit\Tabs"
+                name="revision_module1_display.edit.tabs"/>
+        </referenceContainer>
+        <referenceContainer name="content">
+            <block class="Revision\Module1\Block\Adminhtml\Display\Edit"
+                name="revision_module1_display.edit"/>
+        </referenceContainer>
+    </body>
+</page>
